@@ -16,14 +16,14 @@ const Produk = () => {
     <div>
       <h1>Produk User Page</h1>
       <br />
-      <button
+      {/* <button
         onClick={() => {
           localStorage.removeItem("isLogin");
           push("/auth/login");
         }}
       >
         Logout
-      </button>
+      </button> */}
     </div>
   );
 };

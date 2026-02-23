@@ -89,12 +89,40 @@
 - Buat navigasi:
   - Login → Product (imperatif)
 
-      ![alt text](../Praktikum03/images/30.png)
+    ![alt text](../Praktikum03/images/30.png)
 
-      ![alt text](../Praktikum03/images/31.png)
+    ![alt text](../Praktikum03/images/31.png)
 
-      ![alt text](../Praktikum03/images/32.gif)
+    ![alt text](../Praktikum03/images/32.gif)
 
-   - Login ↔ Register (Link)
+  - Login ↔ Register (Link)
 
-      ![alt text](../Praktikum03/images/33.gif)
+    ![alt text](../Praktikum03/images/33.gif)
+
+## Tugas 3 (Pengayaan)
+
+- Terapkan redirect otomatis ke login jika user belum login.
+
+  ![alt text](../Praktikum03/images/34.png)
+
+  ![alt text](../Praktikum03/images/35.png)
+
+  ![alt text](../Praktikum03/images/36.gif)
+
+## Pertanyaan Evaluasi
+
+1. Apa perbedaan [id].js dan [...slug].js?
+
+   `[id].js` digunakan untuk menangkap satu parameter URL (berupa string), sedangkan `[...slug].js` digunakan untuk menangkap banyak parameter sekaligus dalam bentuk array (catch-all route).
+
+2. Mengapa slug berbentuk array?
+
+   Karena setiap segmen URL yang dipisahkan tanda / akan dibaca sebagai elemen terpisah, sehingga Next.js menyimpannya dalam bentuk array. 
+   
+3. Kapan sebaiknya menggunakan Link dan router.push()? 
+   
+   Link digunakan untuk navigasi biasa melalui klik, sedangkan router.push() digunakan untuk navigasi yang membutuhkan logika tambahan seperti setelah login atau submit form.
+
+4. Mengapa navigasi Next.js tidak me-refresh halaman?
+
+   Karena Next.js menggunakan client-side navigation (SPA), sehingga hanya mengganti komponen tanpa me-reload seluruh halaman.
