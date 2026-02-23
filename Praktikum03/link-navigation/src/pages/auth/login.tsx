@@ -5,7 +5,9 @@ const HalamanLogin = () => {
   const { push } = useRouter();
 
   const handlerLogin = () => {
-    // logic login disini
+    // Simulasi login berhasil
+    localStorage.setItem("isLogin", "true");
+
     push("/produk");
   };
 

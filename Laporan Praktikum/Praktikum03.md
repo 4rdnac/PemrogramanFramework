@@ -84,3 +84,17 @@
 
 ![alt text](../Praktikum03/images/29.png)
 
+## Tugas 2 (Wajib)
+
+- Buat navigasi:
+  - Login → Product (imperatif)
+
+      ![alt text](../Praktikum03/images/30.png)
+
+      ![alt text](../Praktikum03/images/31.png)
+
+      ![alt text](../Praktikum03/images/32.gif)
+
+   - Login ↔ Register (Link)
+
+      ![alt text](../Praktikum03/images/33.gif)
