@@ -43,3 +43,13 @@
 ![alt text](../Praktikum03/images/16.png)
 
 ![alt text](../Praktikum03/images/17.png)
+
+## Langkah 6 – Membuat Halaman Login & Register
+
+![alt text](../Praktikum03/images/18.png)
+
+![alt text](../Praktikum03/images/19.png)
+
+![alt text](../Praktikum03/images/20.png)
+
+![alt text](../Praktikum03/images/21.png)
