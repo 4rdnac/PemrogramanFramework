@@ -53,3 +53,12 @@
 ![alt text](../Praktikum03/images/20.png)
 
 ![alt text](../Praktikum03/images/21.png)
+
+## Langkah 7 – Navigasi Imperatif (router.push)
+
+![alt text](../Praktikum03/images/22.png)
+
+![alt text](../Praktikum03/images/23.png)
+
+![alt text](../Praktikum03/images/24.png)
+
