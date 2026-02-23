@@ -62,3 +62,9 @@
 
 ![alt text](../Praktikum03/images/24.png)
 
+## Langkah 8 – Simulasi Redirect (Belum Login)
+
+![alt text](../Praktikum03/images/25.png)
+
+![alt text](../Praktikum03/images/26.gif)
+
