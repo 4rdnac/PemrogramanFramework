@@ -30,7 +30,7 @@
 
 ![alt text](../Praktikum03/images/12.png)
 
-## Langkah 4 – Optional Catch-All Route 
+## Langkah 4 – Optional Catch-All Route
 
 ![alt text](../Praktikum03/images/13.png)
 
@@ -38,3 +38,8 @@
 
 ![alt text](../Praktikum03/images/15.png)
 
+## Langkah 5 – Validasi Parameter
+
+![alt text](../Praktikum03/images/16.png)
+
+![alt text](../Praktikum03/images/17.png)
