@@ -68,3 +68,19 @@
 
 ![alt text](../Praktikum03/images/26.gif)
 
+# Tugas Praktikum
+
+## Tugas 1 (Wajib)
+
+- Buat catch-all route:
+
+![alt text](../Praktikum03/images/27.png)
+
+- /category/[...slug].js
+
+![alt text](../Praktikum03/images/28.png)
+
+- Tampilkan seluruh parameter URL dalam bentuk list.
+
+![alt text](../Praktikum03/images/29.png)
+
