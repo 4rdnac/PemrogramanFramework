@@ -16,4 +16,16 @@
 
 ![alt text](../Praktikum03/images/06.png)
 
+## Langkah 3 – Pengujian Catch-All Route
 
+![alt text](../Praktikum03/images/07.png)
+
+![alt text](../Praktikum03/images/08.png)
+
+![alt text](../Praktikum03/images/09.png)
+
+![alt text](../Praktikum03/images/10.png)
+
+![alt text](../Praktikum03/images/11.png)
+
+![alt text](../Praktikum03/images/12.png)
