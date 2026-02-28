@@ -1,6 +1,6 @@
 # Jobsheet 4
 
-## 1. Global CSS 
+## 1. Global CSS
 
 ![alt text](../Praktikum04/images/01.png)
 
@@ -34,4 +34,17 @@
 
 ![alt text](../Praktikum04/images/13.png)
 
+## 5. Refactoring Struktur Project (Best Practice)
+
+![alt text](../Praktikum04/images/14.png)
+
+![alt text](../Praktikum04/images/15.png)
+
+![alt text](../Praktikum04/images/16.png)
+
+![alt text](../Praktikum04/images/17.png)
+
+![alt text](../Praktikum04/images/18.png)
+
+![alt text](../Praktikum04/images/19.png)
 
