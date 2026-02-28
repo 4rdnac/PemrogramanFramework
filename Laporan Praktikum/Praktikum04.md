@@ -93,41 +93,60 @@
 # Tugas Praktikum
 
 ## Tugas 1
+
 - Buat halaman Register
 - Gunakan CSS Module
 
-    ![alt text](../Praktikum04/images/37.png)
+  ![alt text](../Praktikum04/images/37.png)
 
-    ![alt text](../Praktikum04/images/38.png)
+  ![alt text](../Praktikum04/images/38.png)
 
-    ![alt text](../Praktikum04/images/39.png)
+  ![alt text](../Praktikum04/images/39.png)
 
-    ![alt text](../Praktikum04/images/40.png)
+  ![alt text](../Praktikum04/images/40.png)
 
 ## Tugas 2
 
 - Refactor halaman Produk ke folder views
 - Pisahkan Hero Section dan Main Section
 
-    ![alt text](../Praktikum04/images/41.png)
+  ![alt text](../Praktikum04/images/41.png)
 
-    ![alt text](../Praktikum04/images/42.png)
+  ![alt text](../Praktikum04/images/42.png)
 
-    ![alt text](../Praktikum04/images/43.png)
+  ![alt text](../Praktikum04/images/43.png)
 
-    ![alt text](../Praktikum04/images/44.png)
+  ![alt text](../Praktikum04/images/44.png)
 
-    ![alt text](../Praktikum04/images/45.png)
+  ![alt text](../Praktikum04/images/45.png)
 
 ## Tugas 3
+
 - Terapkan Tailwind CSS
 - Gunakan minimal 5 utility class
 
+  ![alt text](../Praktikum04/images/46.png)
 
-    ![alt text](../Praktikum04/images/46.png)
+  ![alt text](../Praktikum04/images/47.png)
 
-    ![alt text](../Praktikum04/images/47.png)
+  ![alt text](../Praktikum04/images/48.png)
 
-    ![alt text](../Praktikum04/images/48.png)
+  ![alt text](../Praktikum04/images/49.png)
 
-    ![alt text](../Praktikum04/images/49.png)
+## Pertanyaan Refleksi
+
+1. Kapan sebaiknya menggunakan CSS Module dibanding Global CSS?
+
+   CSS Module sebaiknya dipakai saat kita ingin style hanya berlaku untuk satu komponen saja dan tidak mengganggu komponen lain. Ini cocok digunakan di project seperti Next.js atau React supaya tidak terjadi bentrok antar class CSS.
+
+2. Apa kelemahan inline styling?
+
+   Inline styling punya kelemahan karena tidak bisa pakai fitur seperti :hover, media query, atau selector yang lebih kompleks. Selain itu, kodenya jadi kurang rapi dan sulit digunakan ulang di bagian lain.
+
+3. Mengapa SCSS cocok untuk project skala besar?
+
+   SCSS cocok untuk project besar karena bisa memakai variable, nesting, dan fitur lain yang membuat CSS lebih terstruktur. Jadi lebih mudah dibaca dan dikelola saat project semakin banyak file.
+
+4. Apa keunggulan Tailwind dibanding CSS tradisional?
+
+   Tailwind CSS lebih praktis karena kita bisa langsung memberi style lewat class tanpa membuat file CSS baru. Ini membuat proses membuat tampilan jadi lebih cepat dan konsisten dibanding CSS biasa.
