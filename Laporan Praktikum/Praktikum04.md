@@ -17,3 +17,14 @@
 ![alt text](../Praktikum04/images/06.png)
 
 ![alt text](../Praktikum04/images/07.png)
+
+## 3. Styling untuk Pages (CSS Module)
+
+![alt text](../Praktikum04/images/08.png)
+
+![alt text](../Praktikum04/images/09.png)
+
+![alt text](../Praktikum04/images/10.png)
+
+![alt text](../Praktikum04/images/11.png)
+
