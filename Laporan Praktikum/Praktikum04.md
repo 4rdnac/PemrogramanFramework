@@ -73,3 +73,20 @@
 ![alt text](../Praktikum04/images/28.png)
 
 ![alt text](../Praktikum04/images/29.png)
+
+## 9. Tailwind CSS
+
+![alt text](../Praktikum04/images/30.png)
+
+![alt text](../Praktikum04/images/31.png)
+
+![alt text](../Praktikum04/images/32.png)
+
+![alt text](../Praktikum04/images/33.png)
+
+![alt text](../Praktikum04/images/34.png)
+
+![alt text](../Praktikum04/images/35.png)
+
+![alt text](../Praktikum04/images/36.png)
+
