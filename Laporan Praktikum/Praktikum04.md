@@ -59,3 +59,17 @@
 ![alt text](../Praktikum04/images/22.png)
 
 ![alt text](../Praktikum04/images/23.png)
+
+## 8. SCSS (SASS)
+
+![alt text](../Praktikum04/images/24.png)
+
+![alt text](../Praktikum04/images/25.png)
+
+![alt text](../Praktikum04/images/26.png)
+
+![alt text](../Praktikum04/images/27.png)
+
+![alt text](../Praktikum04/images/28.png)
+
+![alt text](../Praktikum04/images/29.png)
