@@ -29,7 +29,12 @@ export default function App({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
         {!isAuthPage && (
           <div>
-            <button onClick={handleLogout}>Logout</button>
+            <button
+              onClick={handleLogout}
+              className="mt-4 px-6 py-3 bg-red-500 text-white font-semibold rounded-lg shadow-md hover:bg-red-600 transition duration-300"
+            >
+              Logout
+            </button>
           </div>
         )}
       </AppShell>

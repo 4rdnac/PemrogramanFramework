@@ -1,7 +1,9 @@
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+import HeroSection from "../views/produk/HeroSection";
+import MainSection from "../views/produk/MainSection";
 
-const Produk = () => {
+const ProdukView = () => {
   const { push } = useRouter();
 
   useEffect(() => {
@@ -13,19 +15,11 @@ const Produk = () => {
   }, [push]);
 
   return (
-    <div>
-      <h1>Produk User Page</h1>
-      <br />
-      {/* <button
-        onClick={() => {
-          localStorage.removeItem("isLogin");
-          push("/auth/login");
-        }}
-      >
-        Logout
-      </button> */}
-    </div>
+    <>
+      <HeroSection />
+      <MainSection />
+    </>
   );
 };
 
-export default Produk;
+export default ProdukView;

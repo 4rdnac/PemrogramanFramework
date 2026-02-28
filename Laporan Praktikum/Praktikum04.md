@@ -104,3 +104,30 @@
 
     ![alt text](../Praktikum04/images/40.png)
 
+## Tugas 2
+
+- Refactor halaman Produk ke folder views
+- Pisahkan Hero Section dan Main Section
+
+    ![alt text](../Praktikum04/images/41.png)
+
+    ![alt text](../Praktikum04/images/42.png)
+
+    ![alt text](../Praktikum04/images/43.png)
+
+    ![alt text](../Praktikum04/images/44.png)
+
+    ![alt text](../Praktikum04/images/45.png)
+
+## Tugas 3
+- Terapkan Tailwind CSS
+- Gunakan minimal 5 utility class
+
+
+    ![alt text](../Praktikum04/images/46.png)
+
+    ![alt text](../Praktikum04/images/47.png)
+
+    ![alt text](../Praktikum04/images/48.png)
+
+    ![alt text](../Praktikum04/images/49.png)
