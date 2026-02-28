@@ -90,3 +90,17 @@
 
 ![alt text](../Praktikum04/images/36.png)
 
+# Tugas Praktikum
+
+## Tugas 1
+- Buat halaman Register
+- Gunakan CSS Module
+
+    ![alt text](../Praktikum04/images/37.png)
+
+    ![alt text](../Praktikum04/images/38.png)
+
+    ![alt text](../Praktikum04/images/39.png)
+
+    ![alt text](../Praktikum04/images/40.png)
+
