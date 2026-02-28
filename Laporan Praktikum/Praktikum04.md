@@ -28,3 +28,10 @@
 
 ![alt text](../Praktikum04/images/11.png)
 
+## 4. Conditional Rendering Navbar (Tanpa Navbar di Login)
+
+![alt text](../Praktikum04/images/12.png)
+
+![alt text](../Praktikum04/images/13.png)
+
+
