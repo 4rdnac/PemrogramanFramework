@@ -48,3 +48,8 @@
 
 ![alt text](../Praktikum04/images/19.png)
 
+## 6. Inline Styling (CSS-in-JS)
+
+![alt text](../Praktikum04/images/20.png)
+
+![alt text](../Praktikum04/images/21.png)
