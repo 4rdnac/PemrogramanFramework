@@ -53,3 +53,9 @@
 ![alt text](../Praktikum04/images/20.png)
 
 ![alt text](../Praktikum04/images/21.png)
+
+## 7. Kombinasi Global CSS + CSS Module
+
+![alt text](../Praktikum04/images/22.png)
+
+![alt text](../Praktikum04/images/23.png)
