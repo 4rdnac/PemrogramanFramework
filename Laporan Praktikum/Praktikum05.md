@@ -16,7 +16,7 @@
 
 ![alt text](../Praktikum05/images/05.png)
 
-## 4. Membuat Custom Error Page (404) 
+## 4. Membuat Custom Error Page (404)
 
 ![alt text](../Praktikum05/images/06.png)
 
@@ -43,3 +43,19 @@
 ![alt text](../Praktikum05/images/15.png)
 
 ![alt text](../Praktikum05/images/16.png)
+
+# Tugas Praktikum
+
+## Tugas 1 (Wajib)
+
+Tambahkan:
+
+- Judul halaman
+- Deskripsi singkat
+- Gambar ilustrasi
+
+![alt text](../Praktikum05/images/17.png)
+
+![alt text](../Praktikum05/images/18.png)
+
+![alt text](../Praktikum05/images/19.png)
