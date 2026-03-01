@@ -60,9 +60,9 @@ Tambahkan:
 
 ![alt text](../Praktikum05/images/19.png)
 
-## Tugas 2 (Wajib) 
+## Tugas 2 (Wajib)
 
-- Custom warna, font, dan layout halaman 404 
+- Custom warna, font, dan layout halaman 404
 - Navbar tidak tampil di halaman 404
 
 ![alt text](../Praktikum05/images/20.png)
@@ -72,3 +72,16 @@ Tambahkan:
 ![alt text](../Praktikum05/images/22.png)
 
 ![alt text](../Praktikum05/images/23.png)
+
+## Tugas 3 (Pengayaan)
+
+- Tambahkan tombol:
+  - “Kembali ke Home”
+- Gunakan navigasi Next.js (Link)
+
+![alt text](../Praktikum05/images/24.png)
+
+![alt text](../Praktikum05/images/25.png)
+
+![alt text](../Praktikum05/images/26.gif)
+

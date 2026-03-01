@@ -20,4 +20,18 @@
   p {
     color: #555;
   }
+
+    &__button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0070f3;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  &__button:hover {
+    background-color: #0056c1;
+  }
 }
