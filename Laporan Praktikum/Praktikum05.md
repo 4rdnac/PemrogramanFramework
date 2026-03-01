@@ -10,4 +10,8 @@
 
 ![alt text](../Praktikum05/images/03.png)
 
+## 3. Pengaturan Title per Halaman
 
+![alt text](../Praktikum05/images/04.png)
+
+![alt text](../Praktikum05/images/05.png)
