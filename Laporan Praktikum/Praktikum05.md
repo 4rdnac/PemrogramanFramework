@@ -33,3 +33,13 @@
 ![alt text](../Praktikum05/images/11.png)
 
 ![alt text](../Praktikum05/images/12.png)
+
+## 6. Menampilkan Gambar dari Folder Public
+
+![alt text](../Praktikum05/images/13.png)
+
+![alt text](../Praktikum05/images/14.png)
+
+![alt text](../Praktikum05/images/15.png)
+
+![alt text](../Praktikum05/images/16.png)
