@@ -15,3 +15,11 @@
 ![alt text](../Praktikum05/images/04.png)
 
 ![alt text](../Praktikum05/images/05.png)
+
+## 4. Membuat Custom Error Page (404) 
+
+![alt text](../Praktikum05/images/06.png)
+
+![alt text](../Praktikum05/images/07.png)
+
+![alt text](../Praktikum05/images/08.png)
