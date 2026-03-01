@@ -59,3 +59,16 @@ Tambahkan:
 ![alt text](../Praktikum05/images/18.png)
 
 ![alt text](../Praktikum05/images/19.png)
+
+## Tugas 2 (Wajib) 
+
+- Custom warna, font, dan layout halaman 404 
+- Navbar tidak tampil di halaman 404
+
+![alt text](../Praktikum05/images/20.png)
+
+![alt text](../Praktikum05/images/21.png)
+
+![alt text](../Praktikum05/images/22.png)
+
+![alt text](../Praktikum05/images/23.png)

@@ -9,24 +9,30 @@ export default function App({ Component, pageProps }: AppProps) {
 
   const authPages = ["/auth/login", "/auth/register"];
   const isAuthPage = authPages.includes(pathname);
+  const isNotFoundPage = pathname === "/404";
 
   useEffect(() => {
     const isLogin = localStorage.getItem("isLogin");
 
-    if (!isLogin && !isAuthPage) {
+    if (!isLogin && !isAuthPage && !isNotFoundPage) {
       replace("/auth/login");
     }
-  }, [isAuthPage, replace]);
+  }, [isAuthPage, isNotFoundPage, replace]);
 
   const handleLogout = () => {
     localStorage.removeItem("isLogin");
     replace("/auth/login");
   };
 
+  if (isNotFoundPage) {
+    return <Component {...pageProps} />;
+  }
+
   return (
     <div>
       <AppShell>
         <Component {...pageProps} />
+
         {!isAuthPage && (
           <div>
             <button
