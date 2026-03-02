@@ -61,3 +61,7 @@
 ![alt text](../Praktikum06/images/24.png)
 
 ![alt text](../Praktikum06/images/25.png)
+
+## 7. Konfigurasi Firebase
+
+![alt text](../Praktikum06/images/26.png)
