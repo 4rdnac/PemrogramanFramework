@@ -65,3 +65,10 @@
 ## 7. Konfigurasi Firebase
 
 ![alt text](../Praktikum06/images/26.png)
+
+## 8. Ambil Data dari Firestore
+
+![alt text](../Praktikum06/images/27.png)
+
+![alt text](../Praktikum06/images/28.png)
+
