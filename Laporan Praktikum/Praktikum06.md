@@ -72,7 +72,7 @@
 
 ![alt text](../Praktikum06/images/28.png)
 
-## 9. API Mengambil Data Firebase 
+## 9. API Mengambil Data Firebase
 
 ![alt text](../Praktikum06/images/29.png)
 
@@ -83,3 +83,16 @@
 ![alt text](../Praktikum06/images/32.png)
 
 ![alt text](../Praktikum06/images/33.png)
+
+# Tugas Praktikum
+
+## Tugas 1 (Wajib)
+
+- Tambahkan minimal 3 data produk di Firestore
+
+![alt text](../Praktikum06/images/34.png)
+
+- Pastikan data tampil di halaman produk
+
+![alt text](../Praktikum06/images/35.png)
+
