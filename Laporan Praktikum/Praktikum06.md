@@ -96,3 +96,17 @@
 
 ![alt text](../Praktikum06/images/35.png)
 
+## Tugas 2 (Wajib)
+
+- Tambahkan field baru:
+  - category
+
+![alt text](../Praktikum06/images/36.png)
+
+- Tampilkan category di frontend
+
+![alt text](../Praktikum06/images/37.png)
+
+![alt text](../Praktikum06/images/38.png)
+
+![alt text](../Praktikum06/images/39.png)

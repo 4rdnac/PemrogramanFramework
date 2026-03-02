@@ -5,6 +5,7 @@ type ProductType = {
   name: string;
   harga: number;
   ukuran: string;
+  category: string;
 };
 
 const MainSection = () => {
@@ -28,6 +29,7 @@ const MainSection = () => {
           <h3>{produk.name}</h3>
           <p>Harga: Rp {produk.harga.toLocaleString()}</p>
           <p>Ukuran: {produk.ukuran}</p>
+          <p>Kategori: {produk.category}</p>
         </div>
       ))}
     </div>
