@@ -110,3 +110,16 @@
 ![alt text](../Praktikum06/images/38.png)
 
 ![alt text](../Praktikum06/images/39.png)
+
+## Tugas 3 (Pengayaan)
+
+- Tambahkan tombol Refresh Data
+
+![alt text](../Praktikum06/images/40.png)
+
+- Gunakan fetch ulang tanpa reload halaman
+
+![alt text](../Praktikum06/images/41.gif)
+
+![alt text](../Praktikum06/images/42.gif)
+
