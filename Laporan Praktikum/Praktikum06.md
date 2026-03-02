@@ -72,3 +72,14 @@
 
 ![alt text](../Praktikum06/images/28.png)
 
+## 9. API Mengambil Data Firebase 
+
+![alt text](../Praktikum06/images/29.png)
+
+![alt text](../Praktikum06/images/30.png)
+
+![alt text](../Praktikum06/images/31.png)
+
+![alt text](../Praktikum06/images/32.png)
+
+![alt text](../Praktikum06/images/33.png)
