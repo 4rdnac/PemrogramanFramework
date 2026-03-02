@@ -47,3 +47,11 @@
 ![alt text](../Praktikum06/images/19.png)
 
 ![alt text](../Praktikum06/images/20.png)
+
+## 5. Install Firebase
+
+![alt text](../Praktikum06/images/21.png)
+
+![alt text](../Praktikum06/images/22.png)
+
+![alt text](../Praktikum06/images/23.png)
