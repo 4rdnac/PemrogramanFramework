@@ -13,3 +13,9 @@
 ![alt text](../Praktikum06/images/04.png)
 
 ![alt text](../Praktikum06/images/05.png)
+
+## 3. Fetch Data API di Frontend
+
+![alt text](../Praktikum06/images/06.png)
+
+![alt text](../Praktikum06/images/07.png)

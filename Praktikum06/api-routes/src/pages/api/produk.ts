@@ -6,7 +6,7 @@ type Data = {
   data: {
     id: string;
     nama: string;
-    price: number;
+    harga: number;
     ukuran: string;
     warna: string;
   }[];
@@ -19,14 +19,14 @@ export default function handler(
     {
       id: "1",
       nama: "Kaos Polos",
-      price: 10000,
+      harga: 10000,
       ukuran: "L",
       warna: "merah",
     },
     {
       id: "2",
       nama: "Kaos Berlengan Panjang",
-      price: 15000,
+      harga: 15000,
       ukuran: "M",
       warna: "biru",
     },
