@@ -123,3 +123,20 @@
 
 ![alt text](../Praktikum06/images/42.gif)
 
+## Pertanyaan Evaluasi
+
+1. Apa fungsi API Routes pada Next.js?
+
+   API Routes digunakan untuk membuat backend langsung di dalam project Next.js. Dengan API Routes, kita bisa membuat endpoint seperti /api/produk untuk mengambil, menambah, atau mengubah data tanpa perlu membuat server terpisah (misalnya Express). Jadi frontend dan backend bisa dalam satu project.
+
+2. Mengapa .env.local tidak boleh di-push ke repository?
+
+   Karena file .env.local biasanya berisi data sensitif seperti API key, password, atau konfigurasi database. Jika di-push ke repository (terutama public), orang lain bisa melihat dan menyalahgunakan data tersebut. Oleh karena itu biasanya file ini dimasukkan ke .gitignore.
+
+3. Apa perbedaan data statis dan data dinamis?
+
+   Data statis adalah data yang tidak berubah dan sudah ditentukan sebelumnya, misalnya teks tetap di halaman atau data hardcode. Data dinamis adalah data yang bisa berubah-ubah, biasanya diambil dari database atau API, seperti daftar produk dari Firestore.
+
+4. Mengapa Next.js disebut framework fullstack?
+
+   Karena Next.js bisa menangani frontend (React, tampilan UI) dan backend (API Routes, server-side rendering) dalam satu framework. Jadi tidak perlu membuat backend dan frontend secara terpisah.
