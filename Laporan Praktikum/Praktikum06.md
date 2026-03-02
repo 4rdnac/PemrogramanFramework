@@ -19,3 +19,31 @@
 ![alt text](../Praktikum06/images/06.png)
 
 ![alt text](../Praktikum06/images/07.png)
+
+## 4. Setup Firebase
+
+![alt text](../Praktikum06/images/08.png)
+
+![alt text](../Praktikum06/images/09.png)
+
+![alt text](../Praktikum06/images/10.png)
+
+![alt text](../Praktikum06/images/11.png)
+
+![alt text](../Praktikum06/images/12.png)
+
+![alt text](../Praktikum06/images/13.png)
+
+![alt text](../Praktikum06/images/14.png)
+
+![alt text](../Praktikum06/images/15.png)
+
+![alt text](../Praktikum06/images/16.png)
+
+![alt text](../Praktikum06/images/17.png)
+
+![alt text](../Praktikum06/images/18.png)
+
+![alt text](../Praktikum06/images/19.png)
+
+![alt text](../Praktikum06/images/20.png)
