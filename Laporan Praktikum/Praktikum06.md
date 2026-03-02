@@ -55,3 +55,9 @@
 ![alt text](../Praktikum06/images/22.png)
 
 ![alt text](../Praktikum06/images/23.png)
+
+## 6. Konfigurasi Environment Variable
+
+![alt text](../Praktikum06/images/24.png)
+
+![alt text](../Praktikum06/images/25.png)
