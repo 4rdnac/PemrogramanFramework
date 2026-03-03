@@ -101,13 +101,39 @@
 
 - Modifikasi file index.tsx pada folder pages/produk
 
-   ![alt text](../Praktikum07/images/22.png)
+  ![alt text](../Praktikum07/images/22.png)
 
 ### Hasil & Perbandingan
 
-   ![alt text](../Praktikum07/images/23.gif)
+![alt text](../Praktikum07/images/23.gif)
 
 useEffect manual membutuhkan kode lebih panjang karena state dan loading harus diatur sendiri. Data hanya diambil saat komponen mount dan tidak memiliki cache, sehingga selalu fetch ulang kecuali direfresh manual.
 
 SWR lebih ringkas karena cukup satu hook, memiliki cache sehingga data tampil instan, serta otomatis melakukan revalidasi dan menangani loading.
 
+# Tugas Praktikum
+
+## 1. Jelaskan perbedaan:
+
+- Client Side Rendering
+
+  Client Side Rendering (CSR) adalah metode render yang dilakukan di browser menggunakan JavaScript setelah halaman dimuat. Server hanya mengirim HTML kosong dan script, lalu data ditampilkan di sisi client. Cocok untuk aplikasi interaktif, tetapi kurang optimal untuk SEO.
+
+- Server Side Rendering
+
+  Server Side Rendering (SSR) adalah metode render yang dilakukan di server setiap kali ada request dari user. HTML yang dikirim sudah berisi data lengkap sehingga lebih baik untuk SEO dan cocok untuk konten yang sering berubah.
+
+- Static Site Generation
+
+  Static Site Generation (SSG) adalah metode render yang dilakukan saat proses build sebelum website dipublikasikan. Halaman sudah menjadi file HTML statis sehingga sangat cepat diakses dan cocok untuk konten yang jarang berubah.
+
+## 2. Buat halaman produk dengan:
+
+- Skeleton loading
+- Animasi
+
+  ![alt text](../Praktikum07/images/16.gif)
+
+3. Refactor kode dari useEffect menjadi SWR.
+
+   ![alt text](../Praktikum07/images/23.gif)
