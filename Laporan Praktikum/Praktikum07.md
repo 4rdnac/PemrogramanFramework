@@ -14,3 +14,41 @@
 
 ![alt text](../Praktikum07/images/01.png)
 
+## 2. Implementasi CSR dengan useEffect
+
+1. Membuat file index.tsx pada folder views/products
+
+![alt text](../Praktikum07/images/02.png)
+
+2. Modifikasi index.tsx
+
+![alt text](../Praktikum07/images/03.png)
+
+3. Buka file index.tsx pada pages/produk/
+
+![alt text](../Praktikum07/images/04.png)
+
+4. Modifikasi index.tsx pada pages/produk/
+
+![alt text](../Praktikum07/images/05.png)
+
+5. Jalankan browser http://localhost:3000/produk
+
+![alt text](../Praktikum07/images/06.png)
+
+6. Pada folder produk buat file produk.modules.scss
+
+![alt text](../Praktikum07/images/07.png)
+
+7. Modifikasi produk.modules.scss
+
+![alt text](../Praktikum07/images/08.png)
+
+8. Modifikasi Pada file index.tsx pada folder pages/views/product
+
+![alt text](../Praktikum07/images/09.png)
+
+9. Jalankan Browser
+
+![alt text](../Praktikum07/images/10.png)
+
