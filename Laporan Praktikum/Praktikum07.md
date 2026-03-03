@@ -52,3 +52,27 @@
 
 ![alt text](../Praktikum07/images/10.png)
 
+## 3. Implementasi Skeleton Loading
+
+1. Modfikasi file index.tsx pada folder views/product/index.tsx
+
+![alt text](../Praktikum07/images/11.png)
+
+2. Modifikasi file product.module.scss
+
+![alt text](../Praktikum07/images/12.png)
+
+![alt text](../Praktikum07/images/13.png)
+
+3. Jalankan browser maka akan muncul skeleton yang terdapat animasi berkedip
+
+![alt text](../Praktikum07/images/14.gif)
+
+4. Modifikasi pada index.tsx pada folder views/product/index.tsx
+
+![alt text](../Praktikum07/images/15.png)
+
+5. Jalankan browser
+   - Jika dijalankan akan muncul skeletonnya terlebih dahulu setelah itu muncul gambar dan informasinya
+   
+![alt text](../Praktikum07/images/16.gif)
