@@ -70,3 +70,22 @@
 - SSR: HTML sudah berisi data produk lengkap
 
   ![alt text](../Praktikum08/images/10.gif)
+
+## E. Studi Analisis
+
+Jawab pertanyaan berikut:
+
+1. Mengapa SSR lebih baik untuk SEO?
+
+   SSR (Server Side Rendering) lebih baik untuk SEO karena halaman sudah dirender menjadi HTML lengkap di server sebelum dikirim ke browser. Dengan begitu mesin pencari seperti Google dapat langsung membaca konten halaman tanpa perlu menjalankan JavaScript terlebih dahulu, sehingga proses pengindeksan menjadi lebih mudah dan cepat.
+
+2. Kapan sebaiknya menggunakan SSR?
+
+   SSR sebaiknya digunakan ketika halaman membutuhkan data yang selalu diperbarui setiap kali pengguna membuka halaman, seperti halaman berita, produk, atau informasi yang sering berubah. Dengan SSR, server akan mengambil data terbaru terlebih dahulu lalu mengirimkan halaman yang sudah berisi data tersebut ke pengguna.
+
+3. Apa kekurangan SSR dibanding CSR?
+
+   Kekurangan SSR dibanding CSR (Client Side Rendering) adalah setiap permintaan halaman harus diproses oleh server terlebih dahulu, sehingga dapat meningkatkan beban server dan memperlambat respon jika jumlah pengguna sangat banyak. Selain itu, proses implementasi SSR biasanya lebih kompleks dibandingkan CSR.
+
+4. Mengapa skeleton tidak muncul pada SSR?
+   Skeleton loading tidak muncul pada SSR karena data sudah diproses dan dirender di server sebelum halaman dikirim ke browser. Saat halaman diterima oleh client, konten sudah lengkap sehingga komponen skeleton atau loading tidak sempat ditampilkan.
