@@ -23,3 +23,17 @@
 2. Jalankan browser `http://localhost:3000/produk/server`
 
    ![alt text](../Praktikum08/images/05.png)
+
+## 3. Refactor Type ( produk type )
+
+1. Buat folder types pada folder pages dan buat file Product.type.ts
+
+   ![alt text](../Praktikum08/images/06.png)
+
+2. Modifikasi Product.type.ts
+
+   ![alt text](../Praktikum08/images/07.png)
+
+3. Setelah membuat file Product.type.ts maka modifikasi pada file server.tsx menjadi
+
+   ![alt text](../Praktikum08/images/08.png)
