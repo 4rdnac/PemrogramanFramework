@@ -37,3 +37,36 @@
 3. Setelah membuat file Product.type.ts maka modifikasi pada file server.tsx menjadi
 
    ![alt text](../Praktikum08/images/08.png)
+
+## 4. Uji Perbedaan SSR vs CSR
+
+### Uji 1 – Skeleton
+
+- CSR: Skeleton muncul saat refresh
+
+  ![alt text](../Praktikum08/images/09.gif)
+
+- SSR: Skeleton tidak muncul saat Refresh
+
+  ![alt text](../Praktikum08/images/10.gif)
+
+### Uji 2 – Network Tab
+
+1. Buka DevTools → Network → XHR
+2. Refresh halaman CSR → Request API terlihat
+
+   ![alt text](../Praktikum08/images/11.png)
+
+3. Refresh halaman SSR → Request API tidak terlihat
+
+   ![alt text](../Praktikum08/images/12.png)
+
+### Uji 3 – Response HTML
+
+- CSR: HTML awal kosong (berisi skeleton)
+
+  ![alt text](../Praktikum08/images/09.gif)
+
+- SSR: HTML sudah berisi data produk lengkap
+
+  ![alt text](../Praktikum08/images/10.gif)
