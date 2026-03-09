@@ -1,10 +1,10 @@
-import HeroSection from "../views/produk/HeroSection";
-import MainSection from "../views/produk/MainSection";
-import TampilanProduk from "../views/produk";
+import HeroSection from "../../views/produk/HeroSection";
+import MainSection from "../../views/produk/MainSection";
+import TampilanProduk from "../../views/produk";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import useSWR from "swr";
-import fetcher from "../utils/swr/fetcher";
+import fetcher from "../../utils/swr/fetcher";
 
 // const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
