@@ -18,50 +18,23 @@ const HalamanProduk = ( { products }: { products: ProductType }) => {
     //         <DetailProduk products={isLoading ? [] : data.data}/>
     //     </div>
     // );
-
-    return (
-        <div>
-            <DetailProduk products={products}/>
-        </div>
-    );
-
+    
+  return (
+    <div>
+      <DetailProduk products={products} />
+    </div>
+  );
 };
 
 export default HalamanProduk;
 
-// export async function getServerSideProps({ params }: { params: { produk: string } }) {
-//     const res = await fetch(`http://localhost:3000/api/produk/${params?.produk}`);
-//     const response = await res.json();
+export async function getServerSideProps({params}: {params: { produk: string }}) {
+  const res = await fetch(`http://localhost:3000/api/produk/${params?.produk}`);
+  const response = await res.json();
 
-//     return {
-//         props: {
-//             products: response.data
-//         }
-//     };
-// }
-
-export async function getStaticPaths() {
-    const res = await fetch(`http://localhost:3000/api/produk`);
-    const response = await res.json();
-
-    const paths = response.data.map((produk: ProductType) => ({
-        params: { produk: produk.id }
-    }));
-
-    return {
-        paths,
-        fallback: false
-    };
-}
-
-
-export async function getStaticProps({ params }: { params: { produk: string } }) {
-    const res = await fetch(`http://localhost:3000/api/produk/${params?.produk}`);
-    const response: { data: ProductType[] } = await res.json();
-
-    return {
-        props: {
-            products: response.data
-        }
-    };
+  return {
+    props: {
+      products: response.data,
+    },
+  };
 }

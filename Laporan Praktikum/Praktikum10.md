@@ -108,3 +108,52 @@
    Saat diklik salah satu produk
 
    ![alt text](../Praktikum10/images/26.png)
+
+# Pengujian
+
+## CSR
+
+![alt text](../Praktikum10/images/27.png)
+
+## SSR
+
+![alt text](../Praktikum10/images/28.png)
+
+## SSG
+
+![alt text](../Praktikum10/images/29.png)
+
+![alt text](../Praktikum10/images/30.png)
+
+![alt text](../Praktikum10/images/31.png)
+
+## Tabel Perbandingan:
+
+| Aspek          | CSR (Client Side Rendering)                                                              | SSR (Server Side Rendering)                                                 | SSG (Static Site Generation)                                                          |
+| -------------- | ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| Loading        | Awal loading cenderung lebih lama karena browser harus download JS lalu render di client | Lebih cepat karena HTML sudah dirender di server sebelum dikirim ke browser | Sangat cepat karena halaman sudah berupa file statis yang siap ditampilkan            |
+| Build Required | Tidak perlu build khusus untuk data karena semua diambil saat runtime di client          | Tidak perlu build data karena proses render dilakukan setiap ada request    | Perlu proses build saat deploy untuk generate halaman statis                          |
+| SEO            | Kurang optimal karena konten awal kosong dan menunggu JS selesai dijalankan              | Sangat baik karena konten langsung tersedia dari server                     | Sangat baik karena konten sudah statis dan mudah diindeks oleh mesin pencari          |
+| Perubahan Data | Data bisa real-time karena diambil langsung dari client setiap ada interaksi             | Data selalu up-to-date karena di-render ulang setiap request                | Data tidak langsung berubah, perlu rebuild atau menggunakan revalidation untuk update |
+
+## Pertanyaan Analisis
+
+1. Mengapa getStaticPaths wajib pada dynamic SSG?
+
+   getStaticPaths wajib pada dynamic SSG karena saat build, Next.js harus tahu daftar path (misalnya id produk) yang akan dibuat menjadi file statis; tanpa itu, framework tidak tahu halaman mana saja yang perlu di-generate.
+
+2. Mengapa CSR membutuhkan loading state?
+
+   CSR membutuhkan loading state karena data diambil di sisi client setelah halaman dirender, sehingga ada jeda waktu (fetching) sebelum data muncul, dan loading digunakan untuk memberi feedback ke user agar tidak terlihat kosong.
+
+3. Mengapa SSG tidak menampilkan produk baru tanpa build ulang?
+
+   SSG tidak menampilkan produk baru tanpa build ulang karena halaman sudah di-generate menjadi file statis saat build, jadi perubahan data di database tidak langsung mempengaruhi halaman sampai dilakukan rebuild atau revalidation.
+
+4. Mana metode terbaik untuk halaman detail e-commerce?
+
+   Metode terbaik untuk halaman detail e-commerce biasanya SSR atau SSG dengan revalidation, karena butuh SEO yang baik dan data yang relatif up-to-date; SSR cocok untuk data yang sering berubah, sedangkan SSG cocok jika perubahan tidak terlalu sering.
+
+5. Apa risiko menggunakan SSG untuk produk yang sering berubah?
+
+   Risiko menggunakan SSG untuk produk yang sering berubah adalah data menjadi tidak akurat (stok, harga, atau detail lain bisa usang), sehingga bisa menyebabkan kesalahan informasi bagi pengguna jika tidak sering dilakukan rebuild atau mekanisme update seperti ISR.
