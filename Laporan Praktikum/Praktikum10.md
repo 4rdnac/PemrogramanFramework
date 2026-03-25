@@ -57,7 +57,7 @@
 10. Modifikasi file [product].tsx
 
     ![alt text](../Praktikum10/images/13.png)
-    
+
 11. Modifikasi index.tsx pada folder views/detailProduct line 16
 
     ![alt text](../Praktikum10/images/14.png)
@@ -69,7 +69,7 @@
 
     ![alt text](../Praktikum10/images/16.png)
 
-13. Agar tulisan detail produk ditengah maka modifikasi file detailProduct.module.scss line 103-108 dan file index.tsx tambahkan code pada line 7,8 dan 22 menjadi 
+13. Agar tulisan detail produk ditengah maka modifikasi file detailProduct.module.scss line 103-108 dan file index.tsx tambahkan code pada line 7,8 dan 22 menjadi
 
     ![alt text](../Praktikum10/images/17.png)
 
@@ -78,3 +78,16 @@
 14. Sehingga hasilnya seperti berikut
 
     ![alt text](../Praktikum10/images/19.png)
+
+## 3. Implementasi SSR
+
+1. Modifikasi [produk].tsx pada folder src/pages/produk dan comment line 9 sampai 20 dikarena kita akan menggunakan metode SSR. Tambahkan beberapa kode untuk SSR
+
+    ![alt text](../Praktikum10/images/20.png)
+
+
+2. Jalankan browser http://localhost:3000/produk/server
+
+    ![alt text](../Praktikum10/images/21.png)
+
+    ![alt text](../Praktikum10/images/22.png)
