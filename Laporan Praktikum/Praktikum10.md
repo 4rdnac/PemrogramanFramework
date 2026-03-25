@@ -83,11 +83,28 @@
 
 1. Modifikasi [produk].tsx pada folder src/pages/produk dan comment line 9 sampai 20 dikarena kita akan menggunakan metode SSR. Tambahkan beberapa kode untuk SSR
 
-    ![alt text](../Praktikum10/images/20.png)
-
+   ![alt text](../Praktikum10/images/20.png)
 
 2. Jalankan browser http://localhost:3000/produk/server
 
-    ![alt text](../Praktikum10/images/21.png)
+   ![alt text](../Praktikum10/images/21.png)
 
-    ![alt text](../Praktikum10/images/22.png)
+   ![alt text](../Praktikum10/images/22.png)
+
+## 4. Implementasi Static Site Generation (Dynamic SSG)
+
+1. Buka file [produk].tsx dan modifikasi seperti berikut
+
+   ![alt text](../Praktikum10/images/23.png)
+
+2. Buka file index.tsx pada folder src/views/DetailProduct dan modifikasi pada line 11
+
+   ![alt text](../Praktikum10/images/24.png)
+
+3. Jalankan browser http://localhost:3000/produk
+
+   ![alt text](../Praktikum10/images/25.png)
+
+   Saat diklik salah satu produk
+
+   ![alt text](../Praktikum10/images/26.png)
