@@ -47,3 +47,14 @@
 - Uji coba menambahkan parameter dan value pada url http://localhost:3000/api/revalidate?data=produk maka akan muncul true dan sesuai dengan kondisi (req.query.data ===”produk”)
 
   ![alt text](../Praktikum11/images/10.png)
+
+### 3. Tambahkan Token Security
+
+- Buka file .env dan modifikasi
+
+  ![alt text](../Praktikum11/images/11.png)
+
+- Modifikasi file revalidate.ts
+
+  ![alt text](../Praktikum11/images/12.png)
+
