@@ -35,5 +35,15 @@
 - Buat file revalidate.ts pada folder pages/api/ dan modifikasi
 
   ![alt text](../Praktikum11/images/07.png)
-  
+
   ![alt text](../Praktikum11/images/08.png)
+
+### 2. Tambahkan Parameter Data
+
+- Modifikasi file revalidate.ts
+
+  ![alt text](../Praktikum11/images/09.png)
+
+- Uji coba menambahkan parameter dan value pada url http://localhost:3000/api/revalidate?data=produk maka akan muncul true dan sesuai dengan kondisi (req.query.data ===”produk”)
+
+  ![alt text](../Praktikum11/images/10.png)
