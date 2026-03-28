@@ -17,3 +17,11 @@
   ![alt text](../Praktikum12/images/03.png)
 
 - Jadi masih bisa mengakses ke http://localhost:3000/produk
+
+## 3. Redirect Sederhana
+
+![alt text](../Praktikum12/images/04.png)
+
+- Semua halaman akan redirect ke home dan error dikarenakan terus menerus loading
+
+  ![alt text](../Praktikum12/images/05.png)
