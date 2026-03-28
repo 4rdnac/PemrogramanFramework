@@ -34,7 +34,18 @@
 
 - Artinya:
   - Halaman selain /produk dan /about tetap normal
-  
+
     ![alt text](../Praktikum12/images/07.png)
 
   - Ketika user mengakses halaman produk dan about maka akan langsung redirect ke halaman home
+
+## 5. Simulasi Sistem Login
+
+- Modifikasi file middleware.ts
+
+    ![alt text](../Praktikum12/images/08.png)
+
+- Jika user langsung mengakses ke alamat http://localhost:3000/produk tidak akan bisa user akan diarahkan ke halaman login
+
+    ![alt text](../Praktikum12/images/09.gif)
+
