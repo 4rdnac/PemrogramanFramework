@@ -53,3 +53,25 @@
 
   ![alt text](../Praktikum13/images/12.gif)
 
+## 6. Menambahkan Data Tambahan (Full Name)
+
+- Buka file [...nextauth].js
+
+  ![alt text](../Praktikum13/images/13.png)
+
+  ![alt text](../Praktikum13/images/14.png)
+
+- Modifikasi navbar.module.scss
+
+  ![alt text](../Praktikum13/images/15.png)
+
+  ![alt text](../Praktikum13/images/16.png)
+
+- Modifikasi index.tsx pada folder components/layouts/navbar
+
+  ![alt text](../Praktikum13/images/17.png)
+
+- Jalankan browser pada localhost & lakukan sign in
+
+  ![alt text](../Praktikum13/images/18.gif)
+
