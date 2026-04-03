@@ -75,3 +75,22 @@
 
   ![alt text](../Praktikum13/images/18.gif)
 
+## 7. Proteksi Halaman Profile
+
+- pages/profile/index.tsx dan modifikasi file index.tsx
+
+  ![alt text](../Praktikum13/images/19.png)
+
+- jalankan browser
+
+  ![alt text](../Praktikum13/images/20.png)
+
+- Buat file withAuth.ts dan folder dengan nama middleware di src
+
+  ![alt text](../Praktikum13/images/21.png)
+
+- Modifikasi middleware.ts
+
+  ![alt text](../Praktikum13/images/22.png)
+
+  
