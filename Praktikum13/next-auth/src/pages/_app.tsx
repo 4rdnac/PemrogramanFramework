@@ -1,49 +1,17 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import { useRouter } from "next/router";
-import { useEffect } from "react";
+import Navbar from "@/components/layouts/navbar";
 import AppShell from "@/components/layouts/Appshell";
+import { SessionProvider } from "next-auth/react";
 
 export default function App({ Component, pageProps }: AppProps) {
-  const { pathname, replace } = useRouter();
-
-  const authPages = ["/auth/login", "/auth/register"];
-  const isAuthPage = authPages.includes(pathname);
-  const isNotFoundPage = pathname === "/404";
-
-  useEffect(() => {
-    const isLogin = localStorage.getItem("isLogin");
-
-    if (!isLogin && !isAuthPage && !isNotFoundPage) {
-      replace("/auth/login");
-    }
-  }, [isAuthPage, isNotFoundPage, replace]);
-
-  const handleLogout = () => {
-    localStorage.removeItem("isLogin");
-    replace("/auth/login");
-  };
-
-  if (isNotFoundPage) {
-    return <Component {...pageProps} />;
-  }
-
   return (
-    <div>
-      <AppShell>
-        <Component {...pageProps} />
-
-        {!isAuthPage && (
-          <div>
-            <button
-              onClick={handleLogout}
-              className="mt-4 px-6 py-3 bg-red-500 text-white font-semibold rounded-lg shadow-md hover:bg-red-600 transition duration-300"
-            >
-              Logout
-            </button>
-          </div>
-        )}
-      </AppShell>
-    </div>
+    <>
+      <SessionProvider session={pageProps.session}>
+        <AppShell>
+          <Component {...pageProps} />
+        </AppShell>
+      </SessionProvider>
+    </>
   );
 }
