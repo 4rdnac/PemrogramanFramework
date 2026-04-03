@@ -93,4 +93,38 @@
 
   ![alt text](../Praktikum13/images/22.png)
 
-  
+## Pengujian
+
+### Uji 1 – Belum Login
+
+![alt text](../Praktikum13/images/23.gif)
+
+### Uji 2 – Sudah Login
+
+![alt text](../Praktikum13/images/24.gif)
+
+### Uji 3 – Logout
+
+![alt text](../Praktikum13/images/25.gif)
+
+## Pertanyaan Analisis
+
+1. Mengapa session menggunakan JWT?
+
+   Session menggunakan JWT karena bersifat stateless (tidak perlu menyimpan session di server), lebih ringan, dan mudah digunakan untuk komunikasi antar service/API karena token dapat dikirim di setiap request.
+
+2. Apa perbedaan authorize() dan callback jwt()?
+
+   authorize() digunakan saat proses login untuk memverifikasi kredensial user (misalnya email & password), sedangkan callback jwt() digunakan setelah login untuk mengatur atau memodifikasi isi token JWT (misalnya menambahkan role atau data user ke dalam token).
+
+3. Mengapa middleware perlu getToken()?
+
+   Middleware perlu getToken() untuk membaca dan memverifikasi JWT dari request, sehingga bisa menentukan apakah user sudah login atau belum sebelum mengakses halaman tertentu.
+
+4. Apa risiko jika NEXTAUTH_SECRET tidak digunakan?
+
+   Jika NEXTAUTH_SECRET tidak digunakan, JWT bisa lebih mudah dipalsukan atau dimanipulasi karena tidak ada kunci rahasia untuk signing/enkripsi, sehingga berisiko terhadap keamanan (user bisa menyamar jadi user lain).
+
+5. Apa perbedaan autentikasi dan otorisasi dalam sistem ini?
+
+   Autentikasi adalah proses memastikan identitas user (login), sedangkan otorisasi adalah proses menentukan hak akses user (misalnya admin atau user biasa boleh akses halaman tertentu).
