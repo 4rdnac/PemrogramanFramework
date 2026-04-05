@@ -113,3 +113,79 @@
 
 - Jika berhasil maka hasilnya akan muncul loading saat klik register
 
+## Pengujian
+
+### 1 – Register Baru
+
+- Email baru
+
+  ![alt text](../Praktikum14/images/28.gif)
+
+- Hasil data tersimpan di Firestore, password ter-hash, redirect ke login
+
+### 2 – Email Sudah Ada
+
+- Email yang sama
+
+  ![alt text](../Praktikum14/images/29.gif)
+
+- Hasil Error 400 & Message: Email already exists
+
+### 3 – Method GET
+
+- Akses /api/register
+
+  ![alt text](../Praktikum14/images/30.png)
+
+- Hasil 405 Method Not Allowed
+
+## Tugas Praktikum
+
+1. Implementasikan register terhubung database. Sudah
+2. Tambahkan validasi:
+
+- Email wajib
+
+  ![alt text](../Praktikum14/images/31.png)
+
+- Password minimal 6 karakter
+
+  ![alt text](../Praktikum14/images/32.png)
+
+3. Tambahkan role default "member".
+
+![alt text](../Praktikum14/images/33.png)
+
+4. Tampilkan pesan error di UI.
+
+![alt text](../Praktikum14/images/34.png)
+
+![alt text](../Praktikum14/images/35.png)
+
+5. Screenshot hasil Register sukses, Email sudah ada Database Firestore
+
+![alt text](../Praktikum14/images/28.gif)
+
+![alt text](../Praktikum14/images/29.gif)
+
+## Pertanyaan Analisis
+
+1. Mengapa password harus di-hash?
+
+   Password harus di-hash agar tidak tersimpan dalam bentuk asli, sehingga lebih aman jika database bocor.
+
+2. Apa perbedaan addDoc dan setDoc?
+
+   addDoc otomatis membuat ID dokumen baru, sedangkan setDoc bisa menentukan ID sendiri atau menimpa data yang sudah ada.
+
+3. Mengapa perlu validasi method POST?
+
+   Validasi method POST diperlukan agar API hanya menerima request yang sesuai (misalnya untuk kirim data), sehingga lebih aman dan terkontrol.
+
+4. Apa risiko jika email tidak dicek unik?
+
+   Jika email tidak dicek unik, bisa terjadi duplikasi akun dan konflik data saat login atau identifikasi user.
+
+5. Apa fungsi role pada user?
+
+   Role pada user berfungsi untuk mengatur hak akses, misalnya membedakan admin dan user biasa.

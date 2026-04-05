@@ -18,6 +18,19 @@ const TampilanRegister = () => {
     const email = formData.get("email") as string;
     const fullName = formData.get("FullName") as string;
     const password = formData.get("Password") as string;
+
+    if (!email) {
+      setIsLoading(false);
+      setError("Email wajib diisi");
+      return;
+    }
+
+    if (password.length < 6) {
+      setIsLoading(false);
+      setError("Password minimal 6 karakter");
+      return;
+    }
+
     const response = await fetch("/api/register", {
       method: "POST",
       headers: {
@@ -60,6 +73,7 @@ const TampilanRegister = () => {
               className={styles.register__form__item__input}
             />
           </div>
+
           {/* full name */}
           <div className={styles.register__form__item}>
             <label
@@ -76,6 +90,7 @@ const TampilanRegister = () => {
               className={styles.register__form__item__input}
             />
           </div>
+
           {/* password */}
           <div className={styles.register__form__item}>
             <label
@@ -92,6 +107,7 @@ const TampilanRegister = () => {
               className={styles.register__form__item__input}
             />
           </div>
+
           <button
             type="submit"
             className={styles.register__form__item__button}
@@ -100,7 +116,9 @@ const TampilanRegister = () => {
             {isLoading ? "Loading..." : "Register"}
           </button>
         </form>
+
         <br />
+
         <p className={styles.register__form__item__text}>
           Sudah punya akun? <Link href="/auth/login">Ke Halaman Login</Link>
         </p>
