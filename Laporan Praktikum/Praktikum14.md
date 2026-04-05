@@ -62,4 +62,54 @@
 
   ![alt text](../Praktikum14/images/15.gif)
 
+## 3. Install bcrypt
+
+- npm install bcrypt --force
+
+  ![alt text](../Praktikum14/images/16.png)
+
+- npm install --save-dev @types/bcrypt –force
+
+  ![alt text](../Praktikum14/images/17.png)
+
+- Buka file servicefirebase.ts pada folder src/utils/db dan modifikasi
+
+  ![alt text](../Praktikum14/images/18.png)
+
+  ![alt text](../Praktikum14/images/19.png)
+
+- Jalankan browser http://localhost:3000/auth/register dan input data setelah itu klik register
+
+  ![alt text](../Praktikum14/images/20.png)
+
+- Buka pada firebase jika berhasil maka data register akan masuk
+
+  ![alt text](../Praktikum14/images/21.png)
+
+- Jika user memasukkan data yang sama sistem tidak akan memproses tetapi permasalahannya user memasukkan data yang sama tidak ada pemberitahuan pada layar maka dari itu perlu ada perubahan pada code index.tsx pada folder views/auth/register
+  - Line 41
+
+    ![alt text](../Praktikum14/images/22.png)
+
+  - Line 94 dan 96
+
+    ![alt text](../Praktikum14/images/23.png)
+
+  - Line 34 rubah menjadi email
+
+    ![alt text](../Praktikum14/images/24.png)
+
+- Modifikasi juga pada register.module.scss
+
+  ![alt text](../Praktikum14/images/25.png)
+
+- Jika berhasil maka hasilnya seperti berikut
+
+  ![alt text](../Praktikum14/images/26.png)
+
+- Tambakan loading dengan menambahkan kode pada index.tsx
+
+  ![alt text](../Praktikum14/images/27.png)
+
+- Jika berhasil maka hasilnya akan muncul loading saat klik register
 
