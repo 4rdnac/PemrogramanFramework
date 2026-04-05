@@ -37,3 +37,29 @@
   berikut
 
   ![alt text](../Praktikum14/images/09.png)
+
+## 2. Membuat API Register
+
+- Buka file servicefirebase.ts pada folder src/utils/db dan modifikasi
+
+  ![alt text](../Praktikum14/images/10.png)
+
+  ![alt text](../Praktikum14/images/11.png)
+
+- Buat file register.ts pada folder api
+
+  ![alt text](../Praktikum14/images/12.png)
+
+- Modifikasi file register.ts
+
+  ![alt text](../Praktikum14/images/13.png)
+
+- Modifikasi index.tsx pada folder register ( tambahkan beberapa code)
+
+  ![alt text](../Praktikum14/images/14.png)
+
+- Buka browser http://localhost:3000/auth/register isikan data dan klik register. Jika berhasil maka akan masuk ke menu login
+
+  ![alt text](../Praktikum14/images/15.gif)
+
+
