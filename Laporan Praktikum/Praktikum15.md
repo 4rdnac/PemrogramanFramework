@@ -54,7 +54,12 @@
 
   ![alt text](../Praktikum15/images/13.png)
 
-- Buka file servicefirebase.ts dan tambahkan code di line 25-38
+- Buka file servicefirebase.ts dan tambahkan code
 
   ![alt text](../Praktikum15/images/14.png)
 
+## 3. Authorize di NextAuth (Database Login)
+
+- Buka file [...nextauth].ts modifikasi menjadi berikut ( pada bagian providers )
+
+  ![alt text](../Praktikum15/images/15.png)

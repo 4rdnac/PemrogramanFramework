@@ -37,6 +37,7 @@ export async function signIn(email: string) {
     id: doc.id,
     ...doc.data(),
   }));
+
   if (data) {
     return data[0];
   } else {
