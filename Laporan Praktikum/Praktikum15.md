@@ -84,19 +84,19 @@
 
 ## 6. Membuat halaman Admin dan authorize
 
-- Buat halaman admin 
+- Buat halaman admin
 
   ![alt text](../Praktikum15/images/19.png)
 
-- Pada index.tsx tambahkan code berikut  
+- Pada index.tsx tambahkan code berikut
 
   ![alt text](../Praktikum15/images/20.png)
 
-- Modifikasi withAuth.ts  
+- Modifikasi withAuth.ts
 
   ![alt text](../Praktikum15/images/21.png)
 
-- Jalankan browser localhost:3000/produk dan pada status sudah login. Rubah urlnya menjadi http://localhost:3000/admin maka user akan diarahkan ke localhost. Pada intinya role selain admin tidak bisa mengakses 
+- Jalankan browser localhost:3000/produk dan pada status sudah login. Rubah urlnya menjadi http://localhost:3000/admin maka user akan diarahkan ke localhost. Pada intinya role selain admin tidak bisa mengakses
 
   ![alt text](../Praktikum15/images/22.gif)
 
@@ -104,4 +104,82 @@
 
   ![alt text](../Praktikum15/images/23.gif)
 
-  
+## Pengujian
+
+### Uji 1 – Login Valid
+
+Input:
+
+- Email benar
+- Password benar
+
+  Hasil:
+
+- Login berhasil
+- Redirect sesuai callbackUrl
+
+  ![alt text](../Praktikum15/images/24.gif)
+
+### Uji 2 – Password Salah
+
+Input:
+
+- Email benar
+- Password salah
+
+  Hasil:
+
+- Error message tampil
+- Tidak login
+
+  ![alt text](../Praktikum15/images/25.gif)
+
+### Uji 3 – Akses Admin sebagai User
+
+Login sebagai:
+
+- role: user
+  Akses:
+  /admin
+
+  Hasil:
+
+- Redirect ke home
+
+  ![alt text](../Praktikum15/images/22.gif)
+
+### Uji 4 – Akses Admin sebagai Admin
+
+Login sebagai:
+
+- role: admin
+  Akses:
+  /admin
+
+  Hasil:
+
+- Bisa masuk halaman admin
+
+  ![alt text](../Praktikum15/images/23.gif)
+
+## Pertanyaan Analisis
+
+1. Mengapa password harus diverifikasi dengan bcrypt.compare?
+
+   Password harus diverifikasi dengan bcrypt.compare karena password di database disimpan dalam bentuk hash, bukan teks asli, sehingga perlu dibandingkan secara aman tanpa mengubah hash tersebut; selain itu bcrypt juga melindungi dari serangan seperti brute force dengan mekanisme salt.
+
+2. Mengapa role disimpan di token?
+
+   Role disimpan di token agar informasi hak akses user bisa langsung digunakan di setiap request tanpa perlu query ulang ke database, sehingga proses autentikasi dan otorisasi menjadi lebih cepat dan efisien.
+
+3. Apa fungsi callbackUrl?
+
+   callbackUrl berfungsi untuk menentukan ke halaman mana user akan diarahkan setelah login berhasil, sehingga user bisa kembali ke halaman yang sebelumnya ingin diakses.
+
+4. Mengapa middleware penting untuk security?
+
+   Middleware penting untuk security karena berjalan sebelum halaman diakses, sehingga bisa memblokir user yang belum login atau tidak memiliki izin sebelum konten ditampilkan, membuat sistem lebih aman dibanding pengecekan di client.
+
+5. Apa risiko jika role tidak dicek di middleware?
+
+   Jika role tidak dicek di middleware, maka user bisa mengakses halaman yang seharusnya terbatas (misalnya halaman admin), sehingga berpotensi terjadi kebocoran data atau penyalahgunaan fitur.
