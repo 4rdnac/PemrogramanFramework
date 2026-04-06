@@ -70,7 +70,15 @@
 
   ![alt text](../Praktikum15/images/16.png)
 
-- Jalankan browser http://localhost:3000/auth/login  
+- Jalankan browser http://localhost:3000/auth/login
 
   ![alt text](../Praktikum15/images/17.gif)
+
+## 5. Callback URL Logic
+
+- Modifikasi withAuth.ts pada folder src/middleware
+
+  ![alt text](../Praktikum15/images/18.png)
+
+  Tujuannya setelah login, user kembali ke halaman sebelumnya.
 
