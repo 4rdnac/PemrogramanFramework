@@ -63,3 +63,14 @@
 - Buka file [...nextauth].ts modifikasi menjadi berikut ( pada bagian providers )
 
   ![alt text](../Praktikum15/images/15.png)
+
+## 4. Tambahkan Role ke Token
+
+- JWT Callback pada file [...nextauth].ts Modifikasi menjadi
+
+  ![alt text](../Praktikum15/images/16.png)
+
+- Jalankan browser http://localhost:3000/auth/login  
+
+  ![alt text](../Praktikum15/images/17.gif)
+

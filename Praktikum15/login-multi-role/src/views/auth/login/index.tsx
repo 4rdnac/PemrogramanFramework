@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import { signIn } from "next-auth/react";
 
-const Tampilanlogin = () => {
+const TampilanLogin = () => {
   const [isLoading, setIsLoading] = useState(false);
   const { push, query } = useRouter();
 
@@ -58,7 +58,6 @@ const Tampilanlogin = () => {
                 name="email"
                 placeholder="Email"
                 className={styles.login__form__item__input}
-                // required
               />
             </div>
 
@@ -76,8 +75,6 @@ const Tampilanlogin = () => {
                 name="password"
                 placeholder="Password"
                 className={styles.login__form__item__input}
-                // required
-                // minLength={6}
               />
             </div>
             <button
@@ -98,4 +95,4 @@ const Tampilanlogin = () => {
   );
 };
 
-export default Tampilanlogin;
+export default TampilanLogin;
