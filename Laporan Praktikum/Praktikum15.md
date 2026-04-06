@@ -82,3 +82,26 @@
 
   Tujuannya setelah login, user kembali ke halaman sebelumnya.
 
+## 6. Membuat halaman Admin dan authorize
+
+- Buat halaman admin 
+
+  ![alt text](../Praktikum15/images/19.png)
+
+- Pada index.tsx tambahkan code berikut  
+
+  ![alt text](../Praktikum15/images/20.png)
+
+- Modifikasi withAuth.ts  
+
+  ![alt text](../Praktikum15/images/21.png)
+
+- Jalankan browser localhost:3000/produk dan pada status sudah login. Rubah urlnya menjadi http://localhost:3000/admin maka user akan diarahkan ke localhost. Pada intinya role selain admin tidak bisa mengakses 
+
+  ![alt text](../Praktikum15/images/22.gif)
+
+- Untuk mencoba halaman admin rubah role pada firebas pada salah satu akun dan jalankan http://localhost:3000/admin
+
+  ![alt text](../Praktikum15/images/23.gif)
+
+  
