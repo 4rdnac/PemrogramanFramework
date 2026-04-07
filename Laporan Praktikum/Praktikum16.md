@@ -106,3 +106,57 @@
 - Jalankan browser dan login menggunakan akun google setelah cek di firebase, jika data akun googlenya masuk ke database maka anda telah berhasil
 
   ![alt text](../Praktikum16/images/24.gif)
+
+## Pengujian
+
+1. Login Google pertama kali
+
+   ![alt text](../Praktikum16/images/24.gif)
+
+   Data tersimpan di Firestore
+
+2. Login Google kedua kali
+
+   ![alt text](../Praktikum16/images/25.gif)
+
+   Data diupdate
+
+3. User role member akses /admin
+
+   ![alt text](../Praktikum16/images/26.gif)
+
+   Redirect
+
+4. User role admin akses /admin
+
+   ![alt text](../Praktikum16/images/27.gif)
+
+   Bisa masuk
+
+5. Avatar tampil
+
+   ![alt text](../Praktikum16/images/28.png)
+
+## Analisis & Diskusi
+
+1.  Apa perbedaan login credential dan login Google?
+
+    Perbedaan login credential dan login Google adalah login credential menggunakan email dan password yang dibuat sendiri oleh pengguna, sedangkan login Google menggunakan akun Google sehingga tidak perlu membuat password baru karena autentikasi dilakukan oleh layanan Google (OAuth).
+
+2.  Mengapa data Google tetap perlu disimpan ke database?
+
+    Data Google tetap perlu disimpan ke database agar sistem bisa mengenali pengguna secara lokal, menyimpan informasi tambahan (seperti role atau data profil), dan memudahkan pengelolaan user tanpa harus selalu bergantung penuh pada Google.
+
+3.  Apa fungsi JWT callback?
+
+    Fungsi JWT callback adalah untuk memproses dan menyimpan data penting (seperti id user, email, role) ke dalam token JWT agar bisa digunakan di berbagai bagian aplikasi tanpa harus query database terus-menerus.
+
+4.  Mengapa perlu multi-role?
+
+    Perlu multi-role karena setiap user bisa memiliki hak akses berbeda (misalnya admin dan user biasa), sehingga sistem bisa mengatur fitur apa saja yang boleh diakses oleh masing-masing peran.
+
+5.  Apa risiko jika tidak menyimpan user ke database?
+
+    Risiko jika tidak menyimpan user ke database adalah aplikasi tidak bisa mengelola data pengguna dengan baik, sulit memberikan role atau izin akses, dan tidak bisa menyimpan histori atau informasi penting lain yang dibutuhkan sistem.
+
+    
