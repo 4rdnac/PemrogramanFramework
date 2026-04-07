@@ -85,6 +85,24 @@
 3.  Jalankan browser localhost:3000/auth/login masuk melalui sign in with google.Jika
     berhasil maka akan terhubung dengan akun google.
 
-      ![alt text](../Praktikum16/images/20.gif)
+    ![alt text](../Praktikum16/images/20.gif)
 
     Note: data akun google tidak tersimpan dalam database
+
+## 8. Simpan Data Google ke Database
+
+- Buka file servicefirebase.ts pada folder src/utils/db/ dan tambahkan beberapa kode berikut
+
+  ![alt text](../Praktikum16/images/21.png)
+
+- Tambahkan juga code berikut
+
+  ![alt text](../Praktikum16/images/22.png)
+
+- Panggil Service di JWT Callback buka file […nextAuth].ts
+
+  ![alt text](../Praktikum16/images/23.png)
+
+- Jalankan browser dan login menggunakan akun google setelah cek di firebase, jika data akun googlenya masuk ke database maka anda telah berhasil
+
+  ![alt text](../Praktikum16/images/24.gif)
