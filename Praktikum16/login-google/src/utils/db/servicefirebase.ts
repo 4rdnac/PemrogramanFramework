@@ -49,7 +49,7 @@ export async function signIn(email: string) {
 export async function signUp(
   userData: {
     email: string;
-    fullName: string;
+    fullname: string;
     password: string;
     role?: string;
   },
@@ -124,6 +124,59 @@ export async function signInWithGoogle(userData: any, callback: any) {
     callback({
       status: false,
       message: "Failed to register user with Google",
+    });
+  }
+}
+
+export async function signInWithGithub(userData: any, callback: any) {
+  try {
+    const q = query(
+      collection(db, "users"),
+      where("email", "==", userData.email),
+    );
+
+    const querySnapshot = await getDocs(q);
+    const data: any = querySnapshot.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
+
+    if (data.length > 0) {
+      // kalau user sudah ada
+      userData.role = data[0].role;
+
+      await updateDoc(doc(db, "users", data[0].id), {
+        fullname: userData.fullname,
+        image: userData.image,
+      });
+
+      callback({
+        status: true,
+        message: "Login berhasil dengan GitHub",
+        data: userData,
+      });
+    } else {
+      // kalau user baru
+      const newUser = {
+        email: userData.email,
+        fullname: userData.fullname,
+        image: userData.image,
+        role: "member",
+        provider: "github",
+      };
+
+      await addDoc(collection(db, "users"), newUser);
+
+      callback({
+        status: true,
+        message: "User baru berhasil register dengan GitHub",
+        data: newUser,
+      });
+    }
+  } catch (error) {
+    callback({
+      status: false,
+      message: "Gagal login dengan GitHub",
     });
   }
 }

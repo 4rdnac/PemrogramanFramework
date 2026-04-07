@@ -1,10 +1,11 @@
+
 import Link from "next/link";
 import styles from "./login.module.scss";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import { signIn } from "next-auth/react";
 
-const TampilanLogin = () => {
+const Tampilanlogin = () => {
   const [isLoading, setIsLoading] = useState(false);
   const { push, query } = useRouter();
 
@@ -15,6 +16,45 @@ const TampilanLogin = () => {
     event.preventDefault();
     setError("");
     setIsLoading(true);
+
+    // const form = event.currentTarget;
+    // const formData = new FormData(event.currentTarget);
+    // const email = formData.get("email") as string;
+    // // const fullName = formData.get("FullName") as string;
+    // const password = formData.get("Password") as string;
+
+    // // Validasi Email
+    // if (!email || email.trim() === "") {
+    //   setError("Email wajib diisi!");
+    //   setIsLoading(false);
+    //   return;
+    // }
+
+    // // Validasi Password
+    // if (password.length < 6) {
+    //   setError("Password minimal 6 karakter!");
+    //   setIsLoading(false);
+    //   return;
+    // }
+
+    // const response = await fetch("/api/login", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify({ email, password }),
+    // });
+
+    // if (response.status === 200) {
+    //   form.reset();
+    //   setIsLoading(false);
+    //   push("/auth/login");
+    // } else {
+    //   setIsLoading(false);
+    //   setError(
+    //     response.status === 400 ? "Email already exists" : "An error occurred",
+    //   );
+    // }
 
     try {
       const res = await signIn("credentials", {
@@ -58,9 +98,26 @@ const TampilanLogin = () => {
                 name="email"
                 placeholder="Email"
                 className={styles.login__form__item__input}
+                // required
               />
             </div>
-
+            {/* full name */}
+            {/* <div className={styles.login__form__item}>
+            <label
+              htmlFor="FullName"
+              className={styles.login__form__item__label}
+            >
+              Full Name
+            </label>
+            <input
+              type="text"
+              id="FullName"
+              name="FullName"
+              placeholder="Full Name"
+              className={styles.login__form__item__input}
+              // required
+            />
+          </div> */}
             {/* password */}
             <div className={styles.login__form__item}>
               <label
@@ -75,6 +132,8 @@ const TampilanLogin = () => {
                 name="password"
                 placeholder="Password"
                 className={styles.login__form__item__input}
+                // required
+                // minLength={6}
               />
             </div>
             <button
@@ -84,14 +143,23 @@ const TampilanLogin = () => {
             >
               {isLoading ? "Loading..." : "login"}
             </button>
-            <br />
-            <br />
+            <br /> <br />
             <button
+              type="button"
               onClick={() => signIn("google", { callbackUrl, redirect: false })}
               className={styles.login__form__item__button}
               disabled={isLoading}
             >
               {isLoading ? "Loading..." : "Sign in with Google"}
+            </button>
+            <br /> <br />
+            <button 
+              type="button"
+              onClick={() => signIn("github", { callbackUrl, redirect: false })}
+              className={styles.login__form__item__button}
+              disabled={isLoading}
+            >
+              {isLoading ? "Loading..." : "Sign in with GitHub"}
             </button>
           </form>
           <br />
@@ -104,4 +172,4 @@ const TampilanLogin = () => {
   );
 };
 
-export default TampilanLogin;
+export default Tampilanlogin;

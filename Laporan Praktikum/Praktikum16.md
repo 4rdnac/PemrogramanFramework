@@ -159,4 +159,87 @@
 
     Risiko jika tidak menyimpan user ke database adalah aplikasi tidak bisa mengelola data pengguna dengan baik, sulit memberikan role atau izin akses, dan tidak bisa menyimpan histori atau informasi penting lain yang dibutuhkan sistem.
 
-    
+## Tugas Mandiri
+
+1. Tambahkan role editor
+
+   ![alt text](../Praktikum16/images/29.png)
+
+2. Buat halaman khusus editor
+
+- Buat file index.ts di folder pages/editor
+
+  ![alt text](../Praktikum16/images/30.png)
+
+- Modifikasi withAuth.ts
+
+  ![alt text](../Praktikum16/images/31.png)
+
+- Modifikasi middleware.ts
+
+  ![alt text](../Praktikum16/images/32.png)
+
+- Output
+
+  ![alt text](../Praktikum16/images/33.png)
+
+3. Tambahkan provider GitHub
+
+- Daftar OAuth Github
+
+  ![alt text](../Praktikum16/images/34.png)
+
+- Isi Homepage URL dengan http://localhost:3000
+- Isi Authorization callback URL dengan http://localhost:3000/api/auth/callback/github
+
+  ![alt text](../Praktikum16/images/35.png)
+
+- lalu Generate a new client secret
+
+  ![alt text](../Praktikum16/images/36.png)
+
+- Modifikasi .env.local tambahkan Client ID dan Client Secret dari Github
+
+  ![alt text](../Praktikum16/images/37.png)
+
+- Modifikasi [...nextauth].ts tambahkan GithubProvider
+
+  ![alt text](../Praktikum16/images/38.png)
+
+- Modifikasi index.tsx pada views/auth/login
+
+  ![alt text](../Praktikum16/images/39.png)
+
+- Hasil
+
+  ![alt text](../Praktikum16/images/40.png)
+
+  ![alt text](../Praktikum16/images/41.png)
+
+4. Refactor service agar reusable
+
+- Modifikasi servicefirebase.ts
+
+  ![alt text](../Praktikum16/images/42.png)
+
+- Modifikasi [...nextauth].ts
+
+  ![alt text](../Praktikum16/images/43.png)
+
+  ![alt text](../Praktikum16/images/44.png)
+
+- Hasil
+
+  ![alt text](../Praktikum16/images/45.png)
+
+  ![alt text](../Praktikum16/images/46.png)
+
+5. Gunakan next/image untuk optimasi avatar
+
+- Modifikasi index.tsx di navbar
+
+  ![alt text](../Praktikum16/images/47.png)
+
+- Konfigurasi next.config.js
+
+  ![alt text](../Praktikum16/images/48.png)

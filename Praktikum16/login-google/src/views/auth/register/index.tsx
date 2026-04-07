@@ -16,7 +16,7 @@ const TampilanRegister = () => {
     const form = event.currentTarget;
     const formData = new FormData(event.currentTarget);
     const email = formData.get("email") as string;
-    const fullName = formData.get("FullName") as string;
+    const fullname = formData.get("fullname") as string;
     const password = formData.get("Password") as string;
 
     if (!email) {
@@ -36,7 +36,7 @@ const TampilanRegister = () => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ email, fullName, password }),
+      body: JSON.stringify({ email, fullname, password }),
     });
 
     if (response.status === 200) {
@@ -77,15 +77,15 @@ const TampilanRegister = () => {
           {/* full name */}
           <div className={styles.register__form__item}>
             <label
-              htmlFor="FullName"
+              htmlFor="fullname"
               className={styles.register__form__item__label}
             >
               Full Name
             </label>
             <input
               type="text"
-              id="FullName"
-              name="FullName"
+              id="fullname"
+              name="fullname"
               placeholder="Full Name"
               className={styles.register__form__item__input}
             />

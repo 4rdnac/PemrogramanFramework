@@ -1,8 +1,9 @@
 import NextAuth, { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
-import { signIn, signInWithGoogle } from "../../../utils/db/servicefirebase";
+import { signIn, signInWithGoogle, signInWithGithub } from "../../../utils/db/servicefirebase";
 import bcrypt from "bcrypt";
 import GoogleProvider from "next-auth/providers/google";
+import GitHubProvider from "next-auth/providers/github";
 
 export const authOptions: NextAuthOptions = {
   session: {
@@ -45,54 +46,75 @@ export const authOptions: NextAuthOptions = {
       clientId: process.env.GOOGLE_CLIENT_ID || "",
       clientSecret: process.env.GOOGLE_CLIENT_SECRET || "",
     }),
+    GitHubProvider({
+      clientId: process.env.GITHUB_ID || "",
+      clientSecret: process.env.GITHUB_SECRET || "",
+    }),
   ],
 
   callbacks: {
-    async jwt({ token, account, profile, user }: any) {
-      if (account?.provider === "credentials" && user) {
-        token.email = user.email;
-        token.fullname = user.fullname;
-        token.role = user.role;
-      }
-      if (account?.provider === "google") {
-        const data = {
-          fullname: user.name,
-          email: user.email,
-          image: user.image,
-          type: account.provider,
-        };
-        await signInWithGoogle(data, (result: any) => {
-          if (result.status) {
-            token.fullName = result.data.fullName;
-            token.email = result.data.email;
-            token.image = result.data.image;
-            token.type = result.data.type;
-            token.role = result.data.role;
-          }
-        });
-      }
-      return token;
-    },
-    async session({ session, token }: any) {
-      if (token.email) {
-        session.user.email = token.email;
-      }
-      if (token.fullname) {
-        session.user.fullname = token.fullname;
-      }
-      if (token.image) {
-        session.user.image = token.image;
-      }
-      if (token.role) {
-        session.user.role = token.role;
-      }
-      if (token.type) {
-        session.user.type = token.type;
-      }
-      return session;
-    },
+  async jwt({ token, account, user }: any) {
+    // LOGIN CREDENTIALS
+    if (account?.provider === "credentials" && user) {
+      token.email = user.email;
+      token.fullname = user.fullname;
+      token.role = user.role;
+      token.type = "credentials";
+    }
+
+    // LOGIN GOOGLE
+    if (account?.provider === "google") {
+      const data = {
+        fullname: user.name,
+        email: user.email,
+        image: user.image,
+        type: "google",
+      };
+
+      await signInWithGoogle(data, (result: any) => {
+        if (result.status) {
+          token.fullname = result.data.fullname;
+          token.email = result.data.email;
+          token.image = result.data.image;
+          token.type = result.data.type;
+          token.role = result.data.role;
+        }
+      });
+    }
+
+    //LOGIN GITHUB
+    if (account?.provider === "github") {
+      const data = {
+        fullname: user.name,
+        email: user.email || `${user.name}@github.com`,
+        image: user.image,
+        type: "github",
+      };
+
+      await signInWithGithub(data, (result: any) => {
+        if (result.status) {
+          token.fullname = result.data.fullname;
+          token.email = result.data.email;
+          token.image = result.data.image;
+          token.type = result.data.type;
+          token.role = result.data.role;
+        }
+      });
+    }
+
+    return token;
   },
 
+  async session({ session, token }: any) {
+    if (token.email) session.user.email = token.email;
+    if (token.fullname) session.user.fullname = token.fullname;
+    if (token.image) session.user.image = token.image;
+    if (token.role) session.user.role = token.role;
+    if (token.type) session.user.type = token.type;
+
+    return session;
+  },
+},
   pages: {
     signIn: "/auth/login",
   },
