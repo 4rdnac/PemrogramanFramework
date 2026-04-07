@@ -11,6 +11,13 @@ const Navbar = () => {
         {data ? (
           <div className={styles.navbar__user}>
             Welcome, {data.user?.fullname}
+            {data.user?.image && (
+              <img
+                src={data.user.image}
+                alt={data.user.fullname}
+                className={styles.navbar__user__image}
+              />
+            )}
           </div>
         ) : null}
         {data ? (

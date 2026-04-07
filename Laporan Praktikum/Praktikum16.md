@@ -41,21 +41,50 @@
   ![alt text](../Praktikum16/images/09.png)
 
   ![alt text](../Praktikum16/images/10.png)
-  
   - Klik create
 
 ## 4. Buat OAuth Credentials
 
 1. Klik create client pada Clients
 
-  ![alt text](../Praktikum16/images/11.png)
- 
-  ![alt text](../Praktikum16/images/12.png)
+![alt text](../Praktikum16/images/11.png)
+
+![alt text](../Praktikum16/images/12.png)
 
 ## 5. Tambahkan Environment Variables
 
 1. Copy dan paste client ID dan Client secret ke .env
 
-  ![alt text](../Praktikum16/images/13.png)
+![alt text](../Praktikum16/images/13.png)
 
-  ![alt text](../Praktikum16/images/14.png)
+![alt text](../Praktikum16/images/14.png)
+
+## 6. Konfigurasi Google Provider di NextAuth dan Handle Callback JWT & Session
+
+1. Buka file [...nextauth].ts pada folder api/auth dan modifikasi menjadi berikut
+
+![alt text](../Praktikum16/images/15.png)
+
+![alt text](../Praktikum16/images/16.png)
+
+## 7. Tambahkan Button Login Google
+
+1.  Modifikasi file index.tsx pada folder views/auth/login
+
+    ![alt text](../Praktikum16/images/17.png)
+
+2.  Menampilkan image dari google
+    - Buka file index.tsx dan tambahkan code berikut
+
+      ![alt text](../Praktikum16/images/18.png)
+
+    - Buka file navbar.module.css dan tambahkan code berikut
+
+      ![alt text](../Praktikum16/images/19.png)
+
+3.  Jalankan browser localhost:3000/auth/login masuk melalui sign in with google.Jika
+    berhasil maka akan terhubung dengan akun google.
+
+      ![alt text](../Praktikum16/images/20.gif)
+
+    Note: data akun google tidak tersimpan dalam database
