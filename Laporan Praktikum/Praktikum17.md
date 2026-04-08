@@ -1,3 +1,5 @@
+# Jobsheet 17
+
 # 1. Image Optimization
 
 ## A. Optimasi Gambar Lokal (Public Folder)
@@ -12,7 +14,7 @@
 
     ![alt text](../Praktikum17/images/02.png)
 
-    Hasil:
+**Hasil:**
 
 - Warning hilang
 - Image dioptimasi otomatis
@@ -24,8 +26,16 @@
 **Langkah:**
 
 1. Buka file `views/product/index.tsx`
+
+   ![alt text](../Praktikum17/images/03.png)
+
 2. Modifikasi file `index.tsx`
+
+   ![alt text](../Praktikum17/images/04.png)
+
 3. Buka file `next.config.js` (konfigurasi berbeda karena gambar dari URL eksternal)
+
+   ![alt text](../Praktikum17/images/05.png)
 
 **Hasil:**
 
@@ -41,9 +51,13 @@
 
 **Langkah:**
 
-1. Buka file `Appshell/index.tsx`
-2. Modifikasi untuk menggunakan `next/font`
-3. Jalankan browser `localhost:3000/produk` (font berubah menjadi Roboto)
+1. Buka file `Appshell/index.tsx` dan modifikasi untuk menggunakan `next/font`
+
+   ![alt text](../Praktikum17/images/06.png)
+
+2. Jalankan browser `localhost:3000/produk` (font berubah menjadi Roboto)
+
+   ![alt text](../Praktikum17/images/07.png)
 
 **Tips:** Gunakan extension FontFinder untuk mengecek font
 
@@ -63,6 +77,7 @@
 **Langkah:**
 
 1. Buka file `layouts/Navbar/index.tsx`
+
 2. Modifikasi line 11 menggunakan TypeScript
 
 **Catatan:** Saat refresh web produk, tulisan "myApp" akan terlihat berkedip
