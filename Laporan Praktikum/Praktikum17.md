@@ -76,9 +76,9 @@
 
 **Langkah:**
 
-1. Buka file `layouts/Navbar/index.tsx`
+1. Buka file `layouts/Navbar/index.tsx` dan modifikasi
 
-2. Modifikasi line 11 menggunakan TypeScript
+   ![alt text](../Praktikum17/images/08.png)
 
 **Catatan:** Saat refresh web produk, tulisan "myApp" akan terlihat berkedip
 
@@ -113,7 +113,11 @@
 **Langkah:**
 
 1. Buka file `layouts/navbar/index.tsx`
+
+   ![alt text](../Praktikum17/images/09.png)
+
 2. Modifikasi dan tambahkan hostname Google
+
 
 ---
 

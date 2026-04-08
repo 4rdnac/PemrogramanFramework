@@ -1,24 +1,30 @@
 import styles from "./navbar.module.css";
 import { signIn, signOut, useSession } from "next-auth/react";
 import Image from "next/image";
+import Script from "next/dist/client/script";
 
 const Navbar = () => {
   const { data }: any = useSession();
   return (
     <div className={styles.navbar}>
-      <div className={styles.navbar__brand}>MyApp</div>
+      {/* <div className={styles.navbar__brand}>MyApp</div> */}
 
+      <div className={styles.navbar__brand} id="title"></div>
+      <Script id="title-script" strategy="lazyOnload">
+        {`document.getElementById('title').innerHTML = 'MyApp';`}
+      </Script>
       <div className={styles.navbar__right}>
         {data ? (
           <div className={styles.navbar__user}>
             Welcome, {data.user?.fullname}
-            {data.user?.image && (
+            {data?.user?.image && (
+              // <img
               <Image
                 src={data.user.image}
-                alt={data.user.fullname}
-                width={40}
-                height={40}
+                alt={data.user.fullName}
                 className={styles.navbar__user__image}
+                width={50}
+                height={50}
               />
             )}
           </div>
