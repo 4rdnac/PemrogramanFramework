@@ -4,9 +4,32 @@ const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
   images: {
-    domains: [
-      "lh3.googleusercontent.com", // Google
-      "avatars.githubusercontent.com", // GitHub
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "lh3.googleusercontent.com",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "avatars.githubusercontent.com",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "assets.adidas.com",
+        port: "",
+        pathname: "/**",
+      },
+
+      {
+        protocol: "https",
+        hostname: "www.newbalance.co.id",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
 };
