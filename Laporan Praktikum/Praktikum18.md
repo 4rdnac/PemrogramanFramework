@@ -86,9 +86,13 @@ Buka: `coverage/lcov-report/index.html`
 
 Update `jest.config.mjs` dan jalankan:
 
+![alt text](../Praktikum18/images/12.png)
+
 ```bash
 npm run test:coverage
 ```
+
+![alt text](../Praktikum18/images/13.png)
 
 ---
 
