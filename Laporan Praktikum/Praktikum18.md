@@ -126,24 +126,57 @@ npm run test:coverage
 
 ## PRAKTIKUM 7: Testing dengan Router (Mocking)
 
-Mock Next Router untuk mengatasi error "NextRouter was not mounted"
+1. Buat file product.spec.tsx dan tambahkan kode berikut
+
+![alt text](../Praktikum18/images/21.png)
+
+2. Ketika testing halaman Product, sering muncul error: `NextRouter was not mounted`
+
+![alt text](../Praktikum18/images/21.png)
+
+**Solusi:** Mock Next Router Tambahkan di file product.spec.tsx
+
+![alt text](../Praktikum18/images/23.png)
 
 ---
 
 ## PRAKTIKUM 8: Menangani Undefined Data
 
-Tangani undefined properties untuk menghindari error pada coverage
+Jalankan `npm run test:coverage` maka akan muncul error
+
+![alt text](../Praktikum18/images/24.png)
+
+Jika muncul error Cannot read properties of undefined, perbaiki di komponen pada file index.tsx pada folder pages/produk
+
+![alt text](../Praktikum18/images/25.png)
+
+Jalankan npm run test:coverage
+
+![alt text](../Praktikum18/images/26.png)
+
+Maka Solusinya perbaiki code pada file  
+
+![alt text](../Praktikum18/images/27.png)
+
+Note pastikan : comment pada code berikut pada 2 code testing 
+
+![alt text](../Praktikum18/images/28.png)
+
+![alt text](../Praktikum18/images/29.png)
 
 ---
 
 ## Analisis Coverage
 
+![alt text](../Praktikum18/images/30.png)
+
+
 | Metric     | Target |
 | ---------- | ------ |
 | Statements | ≥80%   |
-| Branch     | ≥80%   |
-| Functions  | ≥80%   |
-| Lines      | ≥80%   |
+| Branch     | ≥60%   |
+| Functions  | ≥90%   |
+| Lines      | ≥88%   |
 
 ---
 

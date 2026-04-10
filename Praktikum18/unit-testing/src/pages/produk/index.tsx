@@ -12,7 +12,7 @@ const produk = () => {
 
   return (
     <>
-      <TampilanProduk products={isLoading ? [] : data.data} />
+      <TampilanProduk products={isLoading ? [] : data?.data} />
     </>
   );
 };
