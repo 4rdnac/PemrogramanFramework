@@ -94,6 +94,8 @@ npm run test:coverage
 
 ![alt text](../Praktikum18/images/13.png)
 
+![alt text](../Praktikum18/images/14.png)
+
 ---
 
 ## PRAKTIKUM 6: Testing dengan getByTestId
@@ -104,7 +106,21 @@ npm run test:coverage
 <h1 data-testid="title">About Page</h1>
 ```
 
+![alt text](../Praktikum18/images/15.png)
+
 2. Update testing di `about.spec.tsx` dengan `getByTestId()`
+
+![alt text](../Praktikum18/images/16.png)
+
+![alt text](../Praktikum18/images/17.png)
+
+3. Coba jika dibuat salah (ubah menjadi toBe("About")):
+
+![alt text](../Praktikum18/images/18.png)
+
+![alt text](../Praktikum18/images/19.png)
+
+![alt text](../Praktikum18/images/20.png)
 
 ---
 
