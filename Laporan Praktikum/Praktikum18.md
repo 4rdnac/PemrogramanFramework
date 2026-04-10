@@ -38,6 +38,8 @@ src/
     └── components/
 ```
 
+![alt text](../Praktikum18/images/05.png)
+
 ---
 
 ## PRAKTIKUM 3: Testing Halaman About
@@ -45,7 +47,12 @@ src/
 ### Buat File Testing
 
 - File: `src/__test__/pages/about.spec.tsx`
-- Gunakan snapshot testing
+
+  ![alt text](../Praktikum18/images/06.png)
+
+- Contoh Testing Snapshot. Pada about.spec.tsx tambahkan code berikut :
+
+  ![alt text](../Praktikum18/images/07.png)
 
 ### Jalankan Testing
 
@@ -55,7 +62,7 @@ npm run test
 
 **Output:** `PASS about.spec.tsx`
 
----
+![alt text](../Praktikum18/images/08.png)
 
 ## PRAKTIKUM 4: Coverage Report
 
@@ -63,9 +70,15 @@ npm run test
 npm run test:coverage
 ```
 
+![alt text](../Praktikum18/images/09.png)
+
 Buka: `coverage/lcov-report/index.html`
 
+![alt text](../Praktikum18/images/10.png)
+
 **Target industri:** ≥80% coverage
+
+![alt text](../Praktikum18/images/11.png)
 
 ---
 
